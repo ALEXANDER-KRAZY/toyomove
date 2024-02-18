@@ -1,0 +1,30 @@
+npx create-next-app@latest ./
+enter
+typescript no
+eslint no
+tailwind yes
+src dir no
+experimental app dir yes
+enter
+
+npm install bcrypt mongodb mongose next-auth //to encrypt pass words and phrases
+
+**taiwind.config.js
+**globals.css
+**zip folder assets
+
+*es7 react ext.
+
+npm run dev //to start node.js loclhost127.0.0.0(server)
+
+console.cloud.google.com**
+create project
+apis and services---oauth consent screen
+--create
+--credentials--oauthid
+
+mongodb.com/atlas
+--create cluster--shared
+--DATABASE ACCESS
+--network acces--add ip address
+--conect--drivers
