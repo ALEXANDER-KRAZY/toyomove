@@ -20,7 +20,7 @@ const UserMenu = () => {
     <div className="relative">
       <div className="flex flex-row items-center gap-3">
         <div
-        onClick={() => router.push("/")}
+        onClick={() => router.push("/unishop")}
         className="
         font-bold
         flex
