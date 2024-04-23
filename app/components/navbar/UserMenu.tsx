@@ -25,7 +25,7 @@ const UserMenu = () => {
         font-bold
         flex
         flex-row
-        hover:shadow-md
+        hover:text-gray-500
         cursor-pointer
         text-sm
         ">

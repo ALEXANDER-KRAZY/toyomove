@@ -1,0 +1,7 @@
+/**
+ * Copyright MARS FLAG Corporation. All rights reserved.
+ *
+ * http://www.marsflag.com/
+ * 2017.11.13 AN
+ */
+window.MF_suggest_tmpl=function(e,n){var t=function(e,n){for(var t="",r=n.replace(/　/g," "),o=new RegExp(r,"gi"),p=0;p<e.length;p++)t=e.replace(o,"<em>$&</em>");return t};void 0==e&&(e={});try{var r=[];r.p=r.push,function(){var n=e.prefix,o=e.handler,p=e.data,s=document.getElementById("MF_form_phrase").value;r.p('<ul class="group_sug_word">\n'),p&&p.length;var c=0;c=p.length>5?5:p.length;for(var a=0;a<c;a++){r.p('<li class="sug_word suggest_row_'),r.p(a%2),r.p('"\n\tid="'),r.p(n),r.p(a),r.p('"\n\tonmouseover="try{'),r.p(o),r.p(".focus("),r.p(a),r.p(');}catch(e){}"\n\tonmousedown="try{'),r.p(o),r.p('.suggest_mousedown(event);}catch(e){}"\n\tonclick="try{'),r.p(o),r.p('.suggest_click(event);}catch(e){}"\n\n>');var g=p[a].word,l=t(g,s);r.p("<span>"),r.p(l),r.p("</span></li>")}r.p("</ul>\n")}()}catch(e){return {exception:e,message:"An exception occurred while excuting template. Error type: "+e.name+". Error message: "+e.message}}var o=r.join("");return void 0!==n&&("string"==typeof n&&(n=document.getElementById(n)),n.innerHTML=o),o};

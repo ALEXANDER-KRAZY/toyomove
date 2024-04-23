@@ -1,4 +1,4 @@
-import CarSelection from "./CarSelection";
+import CarSelection from "../components/brandselection/CarSelection";
 
 const PartsCataloguePage = () => {
   return (

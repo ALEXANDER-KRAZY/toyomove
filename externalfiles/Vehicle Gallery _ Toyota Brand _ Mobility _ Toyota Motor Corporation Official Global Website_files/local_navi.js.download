@@ -1,0 +1,39 @@
+jQuery(function ($) {
+    //ローカルナビ固定
+    var nav = $('#fixed_area'),
+        header = $('#header'),
+        offset = nav.offset();
+
+    if (!offset){
+        return;
+    } 
+
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > offset.top - header.height()) {
+            nav.addClass('local_fixed');
+        } else {
+            nav.removeClass('local_fixed');
+        }
+    });
+
+    //スムーススクロール
+    var scrollElm = (function () {
+        if ('scrollingElement' in document) {
+            return document.scrollingElement;
+        }
+        if (navigator.userAgent.indexOf('WebKit') != -1) {
+            return document.body;
+        }
+        return document.documentElement;
+    })();
+    var notSmoothList = 'ul.nav_list li a, .nosmooth';
+    $('.local_nav a[href^="#"]').not(notSmoothList).on('click', function () {
+        var speed = 300;
+        var easing = 'swing';
+        var href = $(this).attr("href");
+        $(scrollElm).animate({
+            scrollTop: $(href == "#" ? 'html' : href).offset().top
+        }, speed, easing);
+        return false;
+    });
+});

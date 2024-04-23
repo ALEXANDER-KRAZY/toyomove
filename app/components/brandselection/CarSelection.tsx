@@ -1,6 +1,6 @@
 "use client";
 
-import Heading from "../components/Heading";
+import Heading from "../Heading";
 import AllBrandsLists from "./AllBrandsLists";
 
 const CarSelection = () => {
@@ -12,7 +12,7 @@ const CarSelection = () => {
     subtitle="Select your car based on its brand"
     />
     <div className="
-    grid
+    grid-cols-0
     grid-cols-1
     sm:grid-cols-2
     md:grid-cols-3

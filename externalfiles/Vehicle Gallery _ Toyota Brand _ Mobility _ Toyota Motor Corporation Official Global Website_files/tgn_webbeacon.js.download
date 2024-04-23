@@ -1,0 +1,23 @@
+/*------------------------------------------------------ */
+/*2013/10/11 new 2019/1/28 mod
+------------------------------------------------------ */
+
+	document.write('<script type="text/javascript" src="//onetag.tws.toyota.jp/onetag/head"></script>');
+
+
+function SCoutput_bc(){
+
+	var catalystStr = "";
+	catalystStr += '<script language="JavaScript" type="text/javascript">';
+	catalystStr += ' var SCaccount="toyotamotortoyotacojpprd"';
+	catalystStr += '</script>';
+	document.write(catalystStr);
+
+		// onetag
+		document.write('<script type="text/javascript" src="//onetag.tws.toyota.jp/onetag/body"></script>');
+		// Google Tag Manager
+		document.write('<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MZ77R9" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>');
+		(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-MZ77R9');
+
+
+}
